@@ -24,7 +24,7 @@ namespace QueryIt
     }
 
 
-    public class SqlRepository<T> : IRepository<T>
+    public class SqlRepository<T> : IRepository<T> where T : class
     {
 
         DbContext _ctx;
