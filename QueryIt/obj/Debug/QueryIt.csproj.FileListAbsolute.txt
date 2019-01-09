@@ -1,0 +1,7 @@
+C:\Users\vasil\source\repos\QueryIt\QueryIt\bin\Debug\QueryIt.exe.config
+C:\Users\vasil\source\repos\QueryIt\QueryIt\bin\Debug\QueryIt.exe
+C:\Users\vasil\source\repos\QueryIt\QueryIt\bin\Debug\QueryIt.pdb
+C:\Users\vasil\source\repos\QueryIt\QueryIt\obj\Debug\QueryIt.csprojAssemblyReference.cache
+C:\Users\vasil\source\repos\QueryIt\QueryIt\obj\Debug\QueryIt.csproj.CoreCompileInputs.cache
+C:\Users\vasil\source\repos\QueryIt\QueryIt\obj\Debug\QueryIt.exe
+C:\Users\vasil\source\repos\QueryIt\QueryIt\obj\Debug\QueryIt.pdb
