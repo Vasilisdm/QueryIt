@@ -5,3 +5,8 @@ C:\Users\vasil\source\repos\QueryIt\QueryIt\obj\Debug\QueryIt.csprojAssemblyRefe
 C:\Users\vasil\source\repos\QueryIt\QueryIt\obj\Debug\QueryIt.csproj.CoreCompileInputs.cache
 C:\Users\vasil\source\repos\QueryIt\QueryIt\obj\Debug\QueryIt.exe
 C:\Users\vasil\source\repos\QueryIt\QueryIt\obj\Debug\QueryIt.pdb
+C:\Users\vasil\source\repos\QueryIt\QueryIt\bin\Debug\EntityFramework.dll
+C:\Users\vasil\source\repos\QueryIt\QueryIt\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\vasil\source\repos\QueryIt\QueryIt\bin\Debug\EntityFramework.xml
+C:\Users\vasil\source\repos\QueryIt\QueryIt\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\vasil\source\repos\QueryIt\QueryIt\obj\Debug\QueryIt.csproj.CopyComplete

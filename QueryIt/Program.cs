@@ -25,13 +25,16 @@ namespace QueryIt
 
         private static void AddEmployees(IRepository<Employee> employeeRepository)
         {
-            
+            employeeRepository.Add(new Employee { Name = "Vassilis" });
+            employeeRepository.Add(new Employee { Name = "George" });
+            employeeRepository.Add(new Employee { Name = "Costas" });
+            employeeRepository.Commit();
         }
 
 
         private static void CountEmployess(IRepository<Employee> employeeRepository)
         {
-            
+            Console.WriteLine(employeeRepository.FindAll().Count());   
         }
 
     }
