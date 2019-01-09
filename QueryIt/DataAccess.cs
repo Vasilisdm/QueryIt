@@ -43,7 +43,7 @@ namespace QueryIt
 
         public int Commit()
         {
-            throw new NotImplementedException();
+           return _ctx.SaveChanges();
         }
 
         public void Delete(T entity)
@@ -53,7 +53,7 @@ namespace QueryIt
 
         public void Dispose()
         {
-            throw new NotImplementedException();
+            _ctx.Dispose();
         }
 
         public IQueryable<T> FindAll()
