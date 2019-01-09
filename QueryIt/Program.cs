@@ -34,7 +34,8 @@ namespace QueryIt
 
         private static void CountEmployess(IRepository<Employee> employeeRepository)
         {
-            Console.WriteLine(employeeRepository.FindAll().Count());   
+            Console.WriteLine(employeeRepository.FindAll().Count());
+            Console.ReadKey();
         }
 
     }
