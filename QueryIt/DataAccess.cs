@@ -28,14 +28,17 @@ namespace QueryIt
     {
 
         DbContext _ctx;
+        DbSet<T> _set;
+
         public SqlRepository(DbContext ctx)
         {
             _ctx = ctx;
+            _set = _ctx.Set<T>();
         }
 
         public void Add(T newEntity)
         {
-            throw new NotImplementedException();
+            _set.Add(newEntity);
         }
 
         public int Commit()
