@@ -22,4 +22,38 @@ namespace QueryIt
         IQueryable<T> FindAll();
         int Commit();
     }
+
+
+    public class SqlRepository<T> : IRepository<T>
+    {
+        public void Add(T newEntity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public int Commit()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Delete(T entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Dispose()
+        {
+            throw new NotImplementedException();
+        }
+
+        public IQueryable<T> FindAll()
+        {
+            throw new NotImplementedException();
+        }
+
+        public T FindById(int id)
+        {
+            throw new NotImplementedException();
+        }
+    }
 }
