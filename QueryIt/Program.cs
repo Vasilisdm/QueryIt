@@ -13,6 +13,26 @@ namespace QueryIt
         {
 
             Database.SetInitializer(new DropCreateDatabaseAlways<EmployeeDb>());
+
+
+            using (IRepository<Employee> employeeRepository = new SqlRepository<Employee>(new EmployeeDb()))
+            {
+                AddEmployees(employeeRepository);
+                CountEmployess(employeeRepository);
+            }
         }
+
+
+        private static void AddEmployees(IRepository<Employee> employeeRepository)
+        {
+            
+        }
+
+
+        private static void CountEmployess(IRepository<Employee> employeeRepository)
+        {
+            
+        }
+
     }
 }
