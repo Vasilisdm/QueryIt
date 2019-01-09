@@ -26,6 +26,13 @@ namespace QueryIt
 
     public class SqlRepository<T> : IRepository<T>
     {
+
+        DbContext _ctx;
+        public SqlRepository(DbContext ctx)
+        {
+            _ctx = ctx;
+        }
+
         public void Add(T newEntity)
         {
             throw new NotImplementedException();
