@@ -24,7 +24,7 @@ namespace QueryIt
     }
 
 
-    public class SqlRepository<T> : IRepository<T> where T : class , IEntity, new()
+    public class SqlRepository<T> : IRepository<T> where T : class , IEntity
     {
 
         DbContext _ctx;
@@ -51,7 +51,7 @@ namespace QueryIt
 
         public void Delete(T entity)
         {
-            throw new NotImplementedException();
+            _set.Remove(entity);
         }
 
         public void Dispose()
@@ -66,9 +66,7 @@ namespace QueryIt
 
         public T FindById(int id)
         {
-            T entity = new T();
-
-            return entity;
+            return _set.Find(id);
         }
     }
 }
