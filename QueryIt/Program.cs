@@ -18,10 +18,17 @@ namespace QueryIt
             using (IRepository<Employee> employeeRepository = new SqlRepository<Employee>(new EmployeeDb()))
             {
                 AddEmployees(employeeRepository);
+                AddManager(employeeRepository);
                 CountEmployess(employeeRepository);
                 QueryEmployees(employeeRepository);
                 DumpPeople(employeeRepository);
             }
+        }
+
+        private static void AddManager(IWriteOnlyRepository<Manager> employeeRepository)
+        {
+            employeeRepository.Add(new Manager { Name = "VSD" });
+            employeeRepository.Commit();
         }
 
         private static void DumpPeople(IReadOnlyRepository<Person> employeeRepository)
