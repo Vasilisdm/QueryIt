@@ -24,7 +24,7 @@ namespace QueryIt
     }
 
 
-    public class SqlRepository<T> : IRepository<T> where T : class , IEntity
+    public class SqlRepository<T> : IRepository<T> where T : class , IEntity, new()
     {
 
         DbContext _ctx;
@@ -66,7 +66,9 @@ namespace QueryIt
 
         public T FindById(int id)
         {
-            throw new NotImplementedException();
+            T entity = new T();
+
+            return entity;
         }
     }
 }
