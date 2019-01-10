@@ -20,9 +20,19 @@ namespace QueryIt
                 AddEmployees(employeeRepository);
                 CountEmployess(employeeRepository);
                 QueryEmployees(employeeRepository);
+                DumpPeople(employeeRepository);
             }
         }
 
+        private static void DumpPeople(IReadOnlyRepository<Person> employeeRepository)
+        {
+            var employees = employeeRepository.FindAll();
+
+            foreach (var employee in employees)
+            {
+                Console.WriteLine(employee.Name);
+            }
+        }
 
         private static void QueryEmployees(IRepository<Employee> employeeRepository)
         {
