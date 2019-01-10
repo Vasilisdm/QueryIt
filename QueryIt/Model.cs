@@ -17,9 +17,15 @@ namespace QueryIt
         public string Name { get; set; }
     }
 
-    public class Employee : Person // , IEntity
+    public class Employee : Person , IEntity
     {
         public int Id { get; set; }
+
+        public bool IsValid()
+        {
+            return true;
+        }
+
         public virtual void DoWork()
         {
             Console.WriteLine("Doing something");

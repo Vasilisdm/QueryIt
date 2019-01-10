@@ -38,7 +38,7 @@ namespace QueryIt
 
         public void Add(T newEntity)
         {
-            if (newEntity.isValid())
+            if (newEntity.IsValid())
             {
                 _set.Add(newEntity);
             }
