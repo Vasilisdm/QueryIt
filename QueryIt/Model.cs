@@ -6,12 +6,18 @@ using System.Threading.Tasks;
 
 namespace QueryIt
 {
+
+    public interface IEntity
+    {
+        bool IsValid();
+    }
+
     public class Person
     {
         public string Name { get; set; }
     }
 
-    public class Employee : Person
+    public class Employee : Person // , IEntity
     {
         public int Id { get; set; }
         public virtual void DoWork()
